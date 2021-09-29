@@ -36,7 +36,17 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/buefy
     'nuxt-buefy',
+    '@nuxtjs/axios',
   ],
+
+  publicRuntimeConfig: {
+    axios: {},
+  },
+
+  axios: {
+    //proxy: true,
+    baseURL: 'http://localhost:3000',
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
